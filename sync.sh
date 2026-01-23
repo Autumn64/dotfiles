@@ -14,3 +14,8 @@ rsync -avzP ~/.vimrc ./vim/
 
 # Configuración de Zsh
 rsync -avzP ~/.zshrc ./zsh/
+
+# Archivos de Konsole. Realmente sólo uso un perfil con un colorscheme, si bien me prevengo por si en el futuro
+# decido guardar algo más.
+rsync -avzP ~/.local/share/konsole/*.profile ./konsole/
+rsync -avzP ~/.local/share/konsole/*.colorscheme ./konsole/
