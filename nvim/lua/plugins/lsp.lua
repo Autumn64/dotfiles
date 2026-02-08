@@ -24,12 +24,12 @@ return {
         "williamboman/mason-lspconfig.nvim",
 	opts = {
             ensure_installed = {
-                "basedpyright",
+		"basedpyright",
 		"bashls",
                 "ts_ls",
                 "html",
                 "cssls",
-                "emmet_ls",
+                "emmet_ls"
             }
 	}
     },
@@ -120,7 +120,8 @@ return {
             filetypes = {
                 "html",
                 "css",
-                "javascript"
+                "javascript",
+		"htmldjango"
             }
         })
         vim.lsp.enable("emmet_ls")

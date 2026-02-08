@@ -3,11 +3,6 @@
 # con clara excepción de las adiciones al PATH y los aliases, y además le quité toda la bola de comentarios que
 # pone en automático y que hacen que el archivo sea innecesariamente grande.
 
-# Add deno completions to search path
-if [[ ":$FPATH:" != *":/home/autumn64/.zsh/completions:"* ]]; then export FPATH="/home/autumn64/.zsh/completions:$FPATH"; fi
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export GPG_TTY=$(tty)
@@ -60,19 +55,18 @@ source $ZSH/oh-my-zsh.sh
 alias reboot="systemctl reboot"
 alias poweroff="systemctl poweroff"
 alias cdgit="cd /mnt/hdd/Documents/Git"
+# Alias para el Midnight Commander. Sin este al salir de MC te deja en la carpeta
+# en la que lo iniciaste y no en la carpeta a la que te moviste desde el programa.
+alias mc='source /usr/lib/mc/mc-wrapper.sh'
+
 
 # Created by `pipx` on 2024-10-18 23:35:38
 export PATH="$PATH:/home/autumn64/.local/bin"
 
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
-. "/home/autumn64/.deno/env"
 
 # Neovim
 export PATH=$PATH:/opt/nvim/
-
-# Initialize zsh completions (added by deno install script)
-autoload -Uz compinit
-compinit
 
 pfetch

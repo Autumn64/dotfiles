@@ -47,3 +47,10 @@ opt.swapfile = true
 -- Tecla leader (me gusta que sea la barra invertida porque igual tengo el teclado en US-altgr-intl)
 g.mapleader = "\\"
 g.maplocalleader = "\\"
+
+-- Tipos de archivo personalizados
+vim.filetype.add({
+  extension = {
+    njk = "htmldjango"
+  }
+})
