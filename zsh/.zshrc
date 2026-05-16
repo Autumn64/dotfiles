@@ -67,6 +67,6 @@ export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 
 # Neovim
-export PATH=$PATH:/opt/nvim/
+export PATH=$PATH:/opt/nvim/bin/
 
 pfetch

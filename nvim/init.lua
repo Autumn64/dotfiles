@@ -6,4 +6,6 @@
 require("autumn64.base")
 require("autumn64.vimwiki")
 require("autumn64.bindings")
+require("autumn64.commands")
 require("autumn64.lazy")
+

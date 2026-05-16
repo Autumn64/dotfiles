@@ -18,10 +18,10 @@ el valor deseado, de modo que la indentación se vea conforme a lo esperado en N
 el archivo en otro editor de texto también se vea correctamente (lo cual sí ha sido un problema
 para mí por no saber configurar eso en Vim).
 --]]
+opt.expandtab = false
 opt.tabstop = 8
 opt.shiftwidth = 2
 opt.softtabstop = 2
-opt.expandtab = false
 
 -- Tiempo de espera para que una secuencia de teclas se considere completa
 opt.timeoutlen = 800

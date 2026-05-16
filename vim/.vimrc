@@ -44,7 +44,7 @@ map <C-l> <C-W>l
 let g:airline_theme='bubblegum'
 
 " Configuración de CoC
-let g:coc_global_extensions = ['coc-json', 'coc-pyright', 'coc-html', 'coc-css', 'coc-tsserver', 'coc-sh', 'coc-stylelintplus', 'coc-discord-rpc', 'coc-emmet']
+let g:coc_global_extensions = ['coc-json', 'coc-pyright', 'coc-html', 'coc-css', 'coc-tsserver', 'coc-sh', 'coc-stylelintplus', 'coc-emmet']
 autocmd FileType markdown let b:coc_suggest_disable = 1
 
 " Con TAB autocompleta

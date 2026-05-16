@@ -39,17 +39,6 @@ map('n', '<leader>lg', function()
   vim.cmd("Telescope live_grep")
 end,  'Usa la funcionalidad de live grep de Telescope.')
 
--- Atajos para buffers
-map('n', '<leader>bl', function()
-  vim.cmd("buffers")
-end,  'Abre una lista de los buffers actualmente abiertos.')
-map('n', '<leader>bn', function()
-  vim.cmd("bn")
-end,  'Cambia al buffer siguiente.')
-map('n', '<leader>bp', function()
-  vim.cmd("bp")
-end,  'Cambia al buffer anterior.')
-
 -- Atajos creados a partir de macros o comandos
 map('n', '<leader>si(', function()
   vim.cmd('normal! ci("pa"')
@@ -63,3 +52,11 @@ end, 'Pone comillas a cualquier texto entre corchetes.')
 map('n', '<leader>sw', function()
   vim.cmd('normal! ciw"pa"')
 end, 'Pone comillas a una palabra.')
+
+-- Atajos para hacerme la vida más fácil con el código
+map('n', '<leader>(', function()
+  vim.cmd('normal! $a()')
+end, 'Agrega paréntesis al final de la línea.')
+map('n', '<leader>)', function()
+  vim.cmd('normal! $a();')
+end, 'Agrega paréntesis y punto y coma al final de la línea.')
