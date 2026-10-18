@@ -1,8 +1,10 @@
 #!/bin/bash
+# ------
 # IBus por aparte porque es un daemon
 if ! pgrep -f "ibus-daemon" ; then
 ibus start &
 fi
+# ------
 while IFS="" read -r p || [ -n "$p" ]
 do
 [[ -z "$p" || "$p" =~ ^# ]] && continue

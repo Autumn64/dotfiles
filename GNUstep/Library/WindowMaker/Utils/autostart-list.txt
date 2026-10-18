@@ -7,4 +7,6 @@ mate-polkit
 wmsystemtray
 wmcalclock -24
 volumeicon
+kdeconnect-indicator
 $HOME/GNUstep/Library/WindowMaker/Utils/startup_shutdown_sounds.py startup
+thunderbird

@@ -152,7 +152,7 @@
       }
     );
     Lowered = No;
-    Position = "1840,271";
+    Position = "1840,243";
   };
   Clip = {
     Forced = No;

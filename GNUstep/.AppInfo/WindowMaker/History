@@ -1,1 +1,1 @@
-("xfce4-terminal", thunar, "xfce4-settings-manager")
+("sudo thunar", "xfce4-terminal", thunar, "xfce4-settings-manager")

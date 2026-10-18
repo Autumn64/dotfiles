@@ -5,11 +5,23 @@
   "xfce4-appfinder.Xfce4-appfinder" = {
     Icon = "xfce4-appfinder.Xfce4-appfinder.xpm";
   };
+  "Mail.thunderbird-default" = {
+    AlwaysUserIcon = No;
+    StartMiniaturized = Yes;
+  };
   "gnome-software.gnome-software" = {
     Icon = "gnome-software.gnome-software.xpm";
   };
+  krita.krita = {
+    StartMaximized = Yes;
+    AlwaysUserIcon = No;
+  };
   thunar.Thunar = {
     Icon = Thunar.tiff;
+  };
+  okular.okular = {
+    StartMaximized = Yes;
+    AlwaysUserIcon = No;
   };
   "xfce4-terminal.Xfce4-terminal" = {
     Icon = "xfce4-terminal.Xfce4-terminal.xpm";
@@ -25,6 +37,10 @@
   };
   "polkit-mate-authentication-agent-1.Polkit-mate-authentication-agent-1" = {
     Icon = "polkit-mate-authentication-agent-1.Polkit-mate-authentication-agent-1.xpm";
+  };
+  bitwarden.bitwarden = {
+    AlwaysUserIcon = No;
+    StartMiniaturized = Yes;
   };
   Navigator.firefox = {
     StartMaximized = Yes;
