@@ -1,13 +1,12 @@
 {
+  soffice.Soffice = {
+    Icon = write.tiff;
+  };
   firefox.Firefox = {
     Icon = firefox.Firefox.xpm;
   };
   "xfce4-appfinder.Xfce4-appfinder" = {
     Icon = "xfce4-appfinder.Xfce4-appfinder.xpm";
-  };
-  "Mail.thunderbird-default" = {
-    AlwaysUserIcon = No;
-    StartMiniaturized = Yes;
   };
   "gnome-software.gnome-software" = {
     Icon = "gnome-software.gnome-software.xpm";
@@ -15,16 +14,6 @@
   krita.krita = {
     StartMaximized = Yes;
     AlwaysUserIcon = No;
-  };
-  thunar.Thunar = {
-    Icon = Thunar.tiff;
-  };
-  okular.okular = {
-    StartMaximized = Yes;
-    AlwaysUserIcon = No;
-  };
-  "xfce4-terminal.Xfce4-terminal" = {
-    Icon = "xfce4-terminal.Xfce4-terminal.xpm";
   };
   "libreoffice.LibreOffice 25.2" = {
     Icon = "libreoffice.LibreOffice 25.2.xpm";
@@ -38,12 +27,26 @@
   "polkit-mate-authentication-agent-1.Polkit-mate-authentication-agent-1" = {
     Icon = "polkit-mate-authentication-agent-1.Polkit-mate-authentication-agent-1.xpm";
   };
-  bitwarden.bitwarden = {
-    AlwaysUserIcon = No;
-    StartMiniaturized = Yes;
-  };
   Navigator.firefox = {
     StartMaximized = Yes;
     AlwaysUserIcon = No;
+  };
+  "Mail.thunderbird-default" = {
+    AlwaysUserIcon = No;
+    StartMiniaturized = Yes;
+  };
+  thunar.Thunar = {
+    Icon = Thunar.tiff;
+  };
+  okular.okular = {
+    StartMaximized = Yes;
+    AlwaysUserIcon = No;
+  };
+  "xfce4-terminal.Xfce4-terminal" = {
+    Icon = "xfce4-terminal.Xfce4-terminal.xpm";
+  };
+  bitwarden.bitwarden = {
+    AlwaysUserIcon = No;
+    StartMiniaturized = Yes;
   };
 }

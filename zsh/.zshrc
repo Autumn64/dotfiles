@@ -69,6 +69,9 @@ export PATH=$JAVA_HOME/bin:$PATH
 # Neovim
 export PATH=$PATH:/opt/nvim/bin/
 
+# Gemas (para neocities)
+export PATH=$PATH:/home/autumn64/.local/share/gem/ruby/3.3.0/bin
+
 /home/autumn64/pfetch
 
 export NVM_DIR="$HOME/.nvm"

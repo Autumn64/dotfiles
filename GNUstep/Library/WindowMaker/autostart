@@ -12,6 +12,5 @@ if ! pgrep -f "$p" > /dev/null ; then
 bash -c "$p" &
 fi
 done < $HOME/GNUstep/Library/WindowMaker/Utils/autostart-list.txt
-
 xset m 20/10 4
 
