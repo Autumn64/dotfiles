@@ -19,3 +19,6 @@ rsync -avzP ~/.zshrc ./zsh/
 # decido guardar algo más.
 rsync -avzP ~/.local/share/konsole/*.profile ./konsole/
 rsync -avzP ~/.local/share/konsole/*.colorscheme ./konsole/
+
+# Configuración de GNUstep (incluyendo Window Maker)
+rsync -avzP ~/GNUstep ./

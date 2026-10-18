@@ -1,0 +1,160 @@
+(
+  "Window Maker",
+  (AppFinder, EXEC, "xfce4-appfinder"),
+  (Terminal, EXEC, "xfce4-terminal"),
+  (Ejecutar..., EXEC, "%A(Ejecutar, Ingrese un comando:)"),
+  (Escritorios, WORKSPACE_MENU),
+  (
+    Escritorio,
+    ("Ocultar los dem\303\241s", HIDE_OTHERS),
+    ("Mostrar todo", SHOW_ALL),
+    ("Ordenar los \303\255conos", ARRANGE_ICONS),
+    (Actualizar, REFRESH),
+    ("Guardar la sesi\303\263n", SAVE_SESSION),
+    ("Reiniciar la sesi\303\263n", CLEAR_SESSION)
+  ),
+  (
+    "Window Maker",
+    (
+      Apariencia,
+      (
+        Temas,
+        OPEN_MENU,
+        "-noext /usr/share/WindowMaker/Themes $HOME/GNUstep/Library/WindowMaker/Themes WITH setstyle"
+      ),
+      (
+        Estilos,
+        OPEN_MENU,
+        "-noext /usr/share/WindowMaker/Styles $HOME/GNUstep/Library/WindowMaker/Styles WITH setstyle"
+      ),
+      (
+        "Conjuntos de \303\255conos",
+        OPEN_MENU,
+        "-noext /usr/share/WindowMaker/IconSets $HOME/GNUstep/Library/WindowMaker/IconSets WITH seticons"
+      ),
+      (
+        "Fondo de pantalla",
+        (
+          Plano,
+          (
+            Negro,
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(solid, \"black\")'"
+          ),
+          (
+            "Amatista oscuro",
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(solid, \"#505075\")'"
+          ),
+          (
+            "A\303\261il",
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(solid, \"#243e6c\")'"
+          ),
+          (
+            "Turqu\303\255",
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(solid, \"#243e6c\")'"
+          ),
+          (
+            "P\303\272rpura",
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(solid, \"#554466\")'"
+          ),
+          (
+            Pardo,
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(solid, \"wheat4\")'"
+          ),
+          (
+            "Gris de Payne",
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(solid, \"#333340\")'"
+          ),
+          (
+            "Vino tinto",
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(solid, \"#400020\")'"
+          )
+        ),
+        (
+          Degradado,
+          (
+            "Puesta del sol",
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(mvgradient, deepskyblue4, black, deepskyblue4, tomato4)'"
+          ),
+          (
+            Cielo,
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(vgradient, \"blue4\", \"white\"'"
+          ),
+          (
+            "Degradado de amatista oscuro",
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(vgradient, \"#7080a5\", \"#101020\"'"
+          ),
+          (
+            "Degradado de a\303\261il",
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(vgradient, \"#746ebc\", \"#242e4c\"'"
+          ),
+          (
+            "Degradado de p\303\272rpura",
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(vgradient, \"#654c66\", \"#151426\"'"
+          ),
+          (
+            "Degradado de pardo",
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(vgradient, \"#a09060\", \"#302010\"'"
+          ),
+          (
+            "Degradado de gris de Payne",
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(vgradient, \"#636380\", \"#131318\"'"
+          ),
+          (
+            "Degradado de vino tinto",
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(vgradient, \"#600040\", \"#180010\"'"
+          )
+        ),
+        (
+          "Im\303\241genes",
+          OPEN_MENU,
+          "-noext $HOME/GNUstep/Library/WindowMaker/Backgrounds WITH wmsetbg -u -t"
+        )
+      ),
+      (
+        "Guardar el tema",
+        EXEC,
+        "getstyle -p \"%a(Theme name, Name to save theme as)\""
+      ),
+      (
+        "Guardar el conjunto de \303\255conos",
+        SHEXEC,
+        "geticonset $HOME/GNUstep/Library/WindowMaker/IconSets/\"%a(IconSet name,Name to save icon set as)\""
+      )
+    ),
+    ("Panel de informaci\303\263n", INFO_PANEL),
+    ("Configurar Window Maker", EXEC, WPrefs),
+    ("Reiniciar Window Maker", RESTART)
+  ),
+  (
+    "Sesi\303\263n",
+    ("Cerrar sesi\303\263n...", EXIT),
+    (Suspender..., EXEC, "systemctl suspend"),
+    (Hibernar..., EXEC, "systemctl hibernate"),
+    (
+      Apagar...,
+      SHEXEC,
+      "$HOME/GNUstep/Library/WindowMaker/Utils/shutdown_reboot.sh shutdown"
+    ),
+    (
+      Reiniciar...,
+      SHEXEC,
+      "$HOME/GNUstep/Library/WindowMaker/Utils/shutdown_reboot.sh reboot"
+    )
+  )
+)

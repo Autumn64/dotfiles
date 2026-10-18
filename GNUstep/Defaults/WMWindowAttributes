@@ -1,0 +1,33 @@
+{
+  firefox.Firefox = {
+    Icon = firefox.Firefox.xpm;
+  };
+  "xfce4-appfinder.Xfce4-appfinder" = {
+    Icon = "xfce4-appfinder.Xfce4-appfinder.xpm";
+  };
+  "gnome-software.gnome-software" = {
+    Icon = "gnome-software.gnome-software.xpm";
+  };
+  thunar.Thunar = {
+    Icon = Thunar.tiff;
+  };
+  "xfce4-terminal.Xfce4-terminal" = {
+    Icon = "xfce4-terminal.Xfce4-terminal.xpm";
+  };
+  "libreoffice.LibreOffice 25.2" = {
+    Icon = "libreoffice.LibreOffice 25.2.xpm";
+  };
+  DesktopEditors.ONLYOFFICE = {
+    Icon = DesktopEditors.ONLYOFFICE.xpm;
+  };
+  "xfce4-settings-manager.Xfce4-settings-manager" = {
+    Icon = "xfce4-settings-manager.Xfce4-settings-manager.xpm";
+  };
+  "polkit-mate-authentication-agent-1.Polkit-mate-authentication-agent-1" = {
+    Icon = "polkit-mate-authentication-agent-1.Polkit-mate-authentication-agent-1.xpm";
+  };
+  Navigator.firefox = {
+    StartMaximized = Yes;
+    AlwaysUserIcon = No;
+  };
+}

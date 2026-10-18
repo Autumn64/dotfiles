@@ -1,0 +1,15 @@
+#!/bin/bash
+# IBus por aparte porque es un daemon
+if ! pgrep -f "ibus-daemon" ; then
+ibus start &
+fi
+while IFS="" read -r p || [ -n "$p" ]
+do
+[[ -z "$p" || "$p" =~ ^# ]] && continue
+if ! pgrep -f "$p" > /dev/null ; then
+bash -c "$p" &
+fi
+done < $HOME/GNUstep/Library/WindowMaker/Utils/autostart-list.txt
+
+xset m 20/10 4
+
