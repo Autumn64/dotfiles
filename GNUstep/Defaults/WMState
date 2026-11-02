@@ -16,11 +16,11 @@
         Name = wmcalclock.wmcalclock;
         DropCommand = "wmcalclock -24 %d";
         BuggyApplication = No;
-        AutoLaunch = No;
+        AutoLaunch = Yes;
         Position = "0,1";
         Lock = No;
         PasteCommand = "wmcalclock -24 %s";
-        Command = "wmcalclock -24";
+        Command = "wmcalclock -S -24 -e \"SimpleAgenda\"";
       },
       {
         Forced = No;
@@ -68,12 +68,25 @@
       },
       {
         Forced = No;
-        Name = DesktopEditors.ONLYOFFICE;
+        Name = soffice.Soffice;
+        DropCommand = "GTK_THEME=adwaita libreoffice --writer %d";
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,7";
+        Lock = No;
+        PasteCommand = "env GTK_THEME=adwaita libreoffice --writer %s";
+        Command = "env GTK_THEME=adwaita libreoffice --writer";
+      },
+      {
+        Forced = No;
+        Name = mousepad.Mousepad;
+        DropCommand = "mousepad %d";
         BuggyApplication = No;
         AutoLaunch = No;
         Position = "0,6";
         Lock = No;
-        Command = "flatpak run org.onlyoffice.desktopeditors";
+        PasteCommand = "mousepad %s";
+        Command = mousepad;
       }
     );
     Applications1080 = (
@@ -91,11 +104,11 @@
         Name = wmcalclock.wmcalclock;
         DropCommand = "wmcalclock -24 %d";
         BuggyApplication = No;
-        AutoLaunch = No;
+        AutoLaunch = Yes;
         Position = "0,1";
         Lock = No;
         PasteCommand = "wmcalclock -24 %s";
-        Command = "wmcalclock -24";
+        Command = "wmcalclock -S -24 -e \"SimpleAgenda\"";
       },
       {
         Forced = No;
@@ -143,16 +156,29 @@
       },
       {
         Forced = No;
-        Name = DesktopEditors.ONLYOFFICE;
+        Name = soffice.Soffice;
+        DropCommand = "GTK_THEME=adwaita libreoffice --writer %d";
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,7";
+        Lock = No;
+        PasteCommand = "env GTK_THEME=adwaita libreoffice --writer %s";
+        Command = "env GTK_THEME=adwaita libreoffice --writer";
+      },
+      {
+        Forced = No;
+        Name = mousepad.Mousepad;
+        DropCommand = "mousepad %d";
         BuggyApplication = No;
         AutoLaunch = No;
         Position = "0,6";
         Lock = No;
-        Command = "flatpak run org.onlyoffice.desktopeditors";
+        PasteCommand = "mousepad %s";
+        Command = mousepad;
       }
     );
     Lowered = No;
-    Position = "1840,243";
+    Position = "1840,218";
   };
   Clip = {
     Forced = No;
@@ -243,14 +269,62 @@
             PasteCommand = "xdg-desktop-portal-gtk %s";
             Command = "xdg-desktop-portal-gtk";
             Omnipresent = No;
+          },
+          {
+            Forced = No;
+            Name = "nm-applet.Nm-applet";
+            DropCommand = "nm-applet %d";
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "7,0";
+            Lock = No;
+            PasteCommand = "nm-applet %s";
+            Command = "nm-applet";
+            Omnipresent = No;
+          },
+          {
+            Forced = No;
+            Name = "org\\.gnome\\.Characters.org\\.gnome\\.Characters";
+            DropCommand = "org.gnome.Characters %d";
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "8,0";
+            Lock = No;
+            PasteCommand = "org.gnome.Characters %s";
+            Command = org.gnome.Characters;
+            Omnipresent = No;
+          },
+          {
+            Forced = No;
+            Name = "kdeconnectd.kdeconnect\\.daemon";
+            DropCommand = "/usr/bin/kdeconnectd %d";
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "9,0";
+            Lock = No;
+            PasteCommand = "/usr/bin/kdeconnectd %s";
+            Command = "/usr/bin/kdeconnectd";
+            Omnipresent = No;
+          },
+          {
+            Forced = No;
+            Name = "kdeconnect-indicator.kdeconnect-indicator";
+            DropCommand = "kdeconnect-indicator %d";
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "10,0";
+            Lock = No;
+            PasteCommand = "kdeconnect-indicator %s";
+            Command = "kdeconnect-indicator";
+            Omnipresent = No;
           }
         );
         Collapsed = Yes;
         AutoAttractIcons = No;
         Lowered = Yes;
       };
-      Name = Main;
+      Name = "Escritorio 1";
     }
   );
-  Workspace = Main;
+  Workspace = "Escritorio 1";
 }

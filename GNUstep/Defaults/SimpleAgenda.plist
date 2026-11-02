@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
     <key>NSWindow Frame mainWindow</key>
-    <string>197 354 593 484 0 0  1920 1080 </string>
+    <string>515 292 724 484 0 0  1920 1080 </string>
     <key>NSWindow Frame preferencesPanel</key>
-    <string>538 666 377 271 0 0  1920 1080 </string>
+    <string>524 842 377 268 0 0  1920 1080 </string>
     <key>defaultAlarmBackend</key>
     <string>Log backend</string>
     <key>defaultStore</key>

@@ -1,10 +1,13 @@
 #!/bin/bash
 # ------
-# IBus por aparte porque es un daemon
+# IBus por aparte porque 'ibus start' ejecuta un proceso con nombre 'ibus-daemon',
+# por ende pgrep no lo puede encontrar tan fácilmente.
 if ! pgrep -f "ibus-daemon" ; then
 ibus start &
 fi
+
 # ------
+# Este código no funciona bien si el programa se ejecuta con argumentos.
 while IFS="" read -r p || [ -n "$p" ]
 do
 [[ -z "$p" || "$p" =~ ^# ]] && continue
@@ -12,5 +15,7 @@ if ! pgrep -f "$p" > /dev/null ; then
 bash -c "$p" &
 fi
 done < $HOME/GNUstep/Library/WindowMaker/Utils/autostart-list.txt
+
+numlockx off
 xset m 20/10 4
 

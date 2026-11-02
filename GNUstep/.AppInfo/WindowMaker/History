@@ -1,1 +1,8 @@
-("sudo thunar", "xfce4-terminal", thunar, "xfce4-settings-manager")
+(
+  pavucontrol,
+  pavucontrol,
+  "sudo thunar",
+  "xfce4-terminal",
+  thunar,
+  "xfce4-settings-manager"
+)

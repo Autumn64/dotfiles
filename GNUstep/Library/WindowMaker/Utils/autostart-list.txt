@@ -1,12 +1,12 @@
 xfsettingsd
+/usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
 xfce4-power-manager
 xfce4-screensaver
 xfce4-clipman
+volumeicon
 nm-applet
 mate-polkit
 wmsystemtray
-wmcalclock -24
-volumeicon
 kdeconnect-indicator
-$HOME/GNUstep/Library/WindowMaker/Utils/startup_shutdown_sounds.py startup
+$HOME/GNUstep/Library/WindowMaker/Utils/startup_sound.py
 thunderbird

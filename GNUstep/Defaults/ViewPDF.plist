@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>NSDefaultOpenDirectory</key>
+    <string>/mnt/hdd/Documents/tmp/tfe</string>
+    <key>NSRecentDocuments</key>
+    <array>
+	<string>file:///mnt/hdd/Documents/tmp/tfe/Portada.pdf</string>
+    </array>
+</dict>
+</plist>

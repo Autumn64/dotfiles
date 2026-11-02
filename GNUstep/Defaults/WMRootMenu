@@ -23,6 +23,13 @@
       "/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=com.discordapp.Discord --file-forwarding com.discordapp.Discord"
     ),
     (Thunderbird, EXEC, thunderbird),
+    (Kolourpaint, EXEC, kolourpaint),
+    (Mousepad, EXEC, mousepad),
+    (
+      Joplin,
+      SHEXEC,
+      "/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=joplin-desktop --file-forwarding net.cozic.joplin_desktop"
+    ),
     (gscan2pdf, EXEC, gscan2pdf),
     (
       GIMP,
@@ -39,6 +46,11 @@
       "OBS Studio",
       SHEXEC,
       "/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=obs com.obsproject.Studio"
+    ),
+    (
+      Kdenlive,
+      SHEXEC,
+      "/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=kdenlive --file-forwarding org.kde.kdenlive"
     )
   ),
   (Ejecutar..., EXEC, "%A(Ejecutar, Ingrese un comando:)"),
@@ -181,19 +193,8 @@
     ("Reiniciar Window Maker", RESTART)
   ),
   (
-    "Sesi\303\263n",
-    ("Cerrar sesi\303\263n...", EXIT),
-    (Suspender..., EXEC, "systemctl suspend"),
-    (Hibernar..., EXEC, "systemctl hibernate"),
-    (
-      Apagar...,
-      SHEXEC,
-      "$HOME/GNUstep/Library/WindowMaker/Utils/shutdown_reboot.sh shutdown"
-    ),
-    (
-      Reiniciar...,
-      SHEXEC,
-      "$HOME/GNUstep/Library/WindowMaker/Utils/shutdown_reboot.sh reboot"
-    )
+    Apagar...,
+    EXEC,
+    "/home/autumn64/GNUstep/Library/WindowMaker/Utils/shutdown_dialog.py"
   )
 )
