@@ -248,18 +248,6 @@
           },
           {
             Forced = No;
-            Name = "gnome-software.gnome-software";
-            DropCommand = "gnome-software %d";
-            BuggyApplication = No;
-            AutoLaunch = No;
-            Position = "5,0";
-            Lock = No;
-            PasteCommand = "gnome-software %s";
-            Command = "gnome-software";
-            Omnipresent = No;
-          },
-          {
-            Forced = No;
             Name = "xdg-desktop-portal-gtk.Xdg-desktop-portal-gtk";
             DropCommand = "xdg-desktop-portal-gtk %d";
             BuggyApplication = No;
@@ -316,6 +304,54 @@
             Lock = No;
             PasteCommand = "kdeconnect-indicator %s";
             Command = "kdeconnect-indicator";
+            Omnipresent = No;
+          },
+          {
+            Forced = No;
+            Name = volumeicon.Volumeicon;
+            DropCommand = "volumeicon %d";
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "11,0";
+            Lock = No;
+            PasteCommand = "volumeicon %s";
+            Command = volumeicon;
+            Omnipresent = No;
+          },
+          {
+            Forced = No;
+            Name = xfsettingsd.Xfsettingsd;
+            DropCommand = "xfsettingsd %d";
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "5,0";
+            Lock = No;
+            PasteCommand = "xfsettingsd %s";
+            Command = xfsettingsd;
+            Omnipresent = No;
+          },
+          {
+            Forced = No;
+            Name = "gnome-software.gnome-software";
+            DropCommand = "gnome-software %d";
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "12,0";
+            Lock = No;
+            PasteCommand = "gnome-software %s";
+            Command = "gnome-software";
+            Omnipresent = No;
+          },
+          {
+            Forced = No;
+            Name = "xfce4-screenshooter.Xfce4-screenshooter";
+            DropCommand = "xfce4-screenshooter %d";
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "13,0";
+            Lock = No;
+            PasteCommand = "xfce4-screenshooter %s";
+            Command = "xfce4-screenshooter";
             Omnipresent = No;
           }
         );

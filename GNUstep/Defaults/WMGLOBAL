@@ -1,5 +1,5 @@
 {
   BoldSystemFont = "sans serif:slant=0:weight=200:width=100:pixelsize=20";
-  SystemFont = "sans serif:slant=0:weight=100:width=100:pixelsize=14";
   DefaultFontSize = 18;
+  SystemFont = "sans serif:slant=0:weight=100:width=100:pixelsize=12";
 }

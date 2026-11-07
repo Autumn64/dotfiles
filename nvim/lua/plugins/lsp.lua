@@ -29,8 +29,7 @@ return {
                 "ts_ls",
                 "html",
                 "cssls",
-                "emmet_ls",
-		"csharp_ls"
+                "emmet_ls"
             }
 	}
     },
@@ -126,9 +125,6 @@ return {
             }
         })
         vim.lsp.enable("emmet_ls")
-
-	-- C#
-	vim.lsp.enable("csharp_ls")
 
 	-- Keybindings que se parecen a los de CoC
         -- Ir a definición

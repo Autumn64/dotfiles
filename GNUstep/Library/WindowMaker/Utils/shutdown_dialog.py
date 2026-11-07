@@ -14,7 +14,7 @@ Requiere: tkinter, ttk, ttkthemes, playsound3
 
 window = ThemedTk(theme="plastik", background=True)
 window.title("Menú de apagado")
-window.geometry('480x350')
+window.geometry('500x350')
 window.resizable(False, False)
 
 # Diccionario con las opciones disponibles y sus descripciones

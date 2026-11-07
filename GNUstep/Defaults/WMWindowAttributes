@@ -1,12 +1,19 @@
 {
-  soffice.Soffice = {
-    Icon = write.tiff;
+  "xfce4-appfinder.Xfce4-appfinder" = {
+    Icon = "xfce4-appfinder.Xfce4-appfinder.xpm";
   };
   firefox.Firefox = {
     Icon = firefox.Firefox.xpm;
   };
-  "xfce4-appfinder.Xfce4-appfinder" = {
-    Icon = "xfce4-appfinder.Xfce4-appfinder.xpm";
+  soffice.Soffice = {
+    Icon = write.tiff;
+  };
+  ristretto.Ristretto = {
+    StartMaximized = Yes;
+    AlwaysUserIcon = No;
+  };
+  xfsettingsd.Xfsettingsd = {
+    Icon = xfsettingsd.Xfsettingsd.xpm;
   };
   "gnome-software.gnome-software" = {
     Icon = "gnome-software.gnome-software.xpm";
@@ -17,6 +24,9 @@
   krita.krita = {
     StartMaximized = Yes;
     AlwaysUserIcon = No;
+  };
+  groupLeader.WPrefs = {
+    Icon = groupLeader.WPrefs.xpm;
   };
   "libreoffice.LibreOffice 25.2" = {
     Icon = "libreoffice.LibreOffice 25.2.xpm";
@@ -54,21 +64,26 @@
   thunar.Thunar = {
     Icon = Thunar.tiff;
   };
-  okular.okular = {
-    AlwaysUserIcon = No;
-  };
   kdeconnectd.kdeconnect.daemon = {
     Icon = kdeconnectd.kdeconnect.daemon.xpm;
+  };
+  okular.okular = {
+    AlwaysUserIcon = No;
   };
   "xfce4-terminal.Xfce4-terminal" = {
     Icon = "xfce4-terminal.Xfce4-terminal.xpm";
   };
   texstudio.TeXstudio = {
-    StartMaximized = Yes;
     AlwaysUserIcon = No;
   };
   bitwarden.bitwarden = {
     AlwaysUserIcon = No;
     StartMiniaturized = Yes;
+  };
+  volumeicon.Volumeicon = {
+    Icon = volumeicon.Volumeicon.xpm;
+  };
+  "xfce4-screenshooter.Xfce4-screenshooter" = {
+    Icon = "xfce4-screenshooter.Xfce4-screenshooter.xpm";
   };
 }

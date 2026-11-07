@@ -5,7 +5,6 @@
 if ! pgrep -f "ibus-daemon" ; then
 ibus start &
 fi
-
 # ------
 # Este código no funciona bien si el programa se ejecuta con argumentos.
 while IFS="" read -r p || [ -n "$p" ]
@@ -15,7 +14,6 @@ if ! pgrep -f "$p" > /dev/null ; then
 bash -c "$p" &
 fi
 done < $HOME/GNUstep/Library/WindowMaker/Utils/autostart-list.txt
-
 numlockx off
 xset m 20/10 4
 
