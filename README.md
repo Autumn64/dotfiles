@@ -19,10 +19,8 @@ Credit is not necessary though appreciated!
     * [git](https://git-scm.com/).
     * [Node.js](https://nodejs.org) and [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
     * [Powerline fonts](https://github.com/powerline/fonts).
-- Konsole:
-    * [Zsh](https://wiki.archlinux.org/title/Zsh).
 - Neovim: 
-    * Must be version `>= 0.11.3`.
+    * Must be version `>= 0.12.6`.
 - Vim: 
     * Must be version `>= 9.0.0438`.
     * [vim-plug](https://github.com/junegunn/vim-plug).
@@ -30,14 +28,15 @@ Credit is not necessary though appreciated!
     * Check `GNUstep/Library/WindowMaker/Utils/autostart-list.txt` and modify it according to your needs, or install the software in that list.
     * The startup/shutdown sounds, as well as the shutdown dialog, require Tk, ttk, [playsound3](https://pypi.org/project/playsound3/) and [ttkthemes](https://pypi.org/project/ttkthemes/).
 - Zsh: 
-    * [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh).
     * [pfetch](https://github.com/dylanaraps/pfetch).
+    * [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions).
+    * [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting).
 
 ## Screenshots
 
-### Konsole + Zsh
+### Zsh
 
-![A screenshot of Konsole + Zsh using the dotfiles.](res/konsole_zsh.png)
+![A screenshot of Xfce Terminal + Zsh using the dotfiles.](res/zsh.png)
 
 ### Neovim
 
@@ -48,6 +47,7 @@ Credit is not necessary though appreciated!
 ![A screenshot of Vim using the dotfiles.](res/vim.png)
 
 ### Window Maker
+
 ![A screenshot of Window Maker in Debian 13 using the dotfiles.](res/wmaker.png)
 
 ## Author
