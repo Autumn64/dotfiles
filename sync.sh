@@ -6,19 +6,28 @@
 # los archivos cuando me acuerde de actualizar este repo.
 
 # Dotfiles de Neovim
+if [ -e ~/.config/nvim ]; then
 rsync -avzP ~/.config/nvim ./
+fi
 
 # Realmente ya no uso esta configuración de Vim (porque ahora uso Neovim), pero igual quise agregarla
 # por si a alguien le sirve, y por si yo misma llego a utilizarla en el futuro.
+if [ -e ~/.vimrc ]; then
 rsync -avzP ~/.vimrc ./vim/
+fi
 
 # Configuración de Zsh
+if [ -e ~/.zshrc ]; then
 rsync -avzP ~/.zshrc ./zsh/
+fi
 
-# Archivos de Konsole. Realmente sólo uso un perfil con un colorscheme, si bien me prevengo por si en el futuro
-# decido guardar algo más.
+# Ya no uso konsole por lo que estos archivos ya no se actualizan.
+if [ -e ~/.local/share/konsole ]; then
 rsync -avzP ~/.local/share/konsole/*.profile ./konsole/
 rsync -avzP ~/.local/share/konsole/*.colorscheme ./konsole/
+fi
 
 # Configuración de GNUstep (incluyendo Window Maker)
+if [ -e ~/GNUstep ]; then
 rsync -avzP ~/GNUstep ./
+fi

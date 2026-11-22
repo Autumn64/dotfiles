@@ -12,6 +12,9 @@ o un servidor gráfico diferente.
 Requiere: tkinter, ttk, ttkthemes, playsound3
 """
 
+STARTUP_SOUND_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Sounds", "startup.mp3")
+SHUTDOWN_SOUND_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Sounds", "shutdown.mp3")
+
 window = ThemedTk(theme="plastik", background=True)
 window.title("Menú de apagado")
 window.geometry('500x350')
@@ -59,7 +62,7 @@ def runAction(action: str) -> None:
     command = sessionValues[action]["command"]
     window.destroy()
     if action in ["Cerrar sesión", "Apagar", "Reiniciar"]:
-        playsound(f"{os.environ['HOME']}/GNUstep/Library/WindowMaker/Utils/Sounds/shutdown.mp3")
+        playsound(SHUTDOWN_SOUND_PATH)
     os.execvp(command[0], command)
 
 # Título y combo

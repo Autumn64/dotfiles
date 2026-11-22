@@ -3,5 +3,5 @@
 import os
 from playsound3 import playsound
 
-playsound(f"{os.environ['HOME']}/GNUstep/Library/WindowMaker/Utils/Sounds/startup.mp3")
+playsound(os.path.join(os.path.dirname(os.path.abspath(__file__)), "Sounds", "startup.mp3"))
 os._exit(0)
