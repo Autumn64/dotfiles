@@ -77,6 +77,9 @@ precmd() {
 # - %~: Imprime el nombre del directorio actual, o `~` si es la carpeta home.
 # - %#: Imprime el caracter `%` si es un usuario normal, o `#` si es el usuario root (francamente me gustó más % que $).
 # - %?: Imprime el código de estatus de salida del programa que se ejecutó inmediatamente antes de mostrar el shell.
+#
+# En la parte que comienza por `╰─%F{117}`, es buena idea cambiar el color y el símbolo Unicode si usas un
+# sistema operativo diferente de Arch Linux.
 
 PROMPT=$'\n╭─%F{183}\Uf09f1 %n@%m %f\U00b7 %F{211}\Uf07b %~ ${vcs_info_msg_0_} \n%f╰─%F{117}\Uf08c7 %f%# '
 RPROMPT=$'%F{211}%?'
@@ -84,6 +87,7 @@ RPROMPT=$'%F{211}%?'
 # Plugins.
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 # Autostart.
 pfetch
